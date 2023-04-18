@@ -1,96 +1,155 @@
-<!DOCTYPE html>
-<html>
-<title>진곤이 프로필1</title>
-<head>
+<!doctype html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>곤북이의 거북창고</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-success" href="#">곤북이의 거북창고</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            내려보세융
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">힝</a></li>
+                            <li><a class="dropdown-item" href="#">아무것도 없지롱</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">멍충아~</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div style="margin: 100px;"></div>
+    <div class="container">
+        <div style="margin: 20px;"></div>
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="profile.jpg" class="card-img-top" width="300" height="400" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">GonBuk_Profile</h5>
+                        <p class="card-text">곤북이 자기소개</p>
+                        <a href="Introduce.html" class="btn btn-info">Go!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="pro.jpg" class="card-img-top" width="300" height="400" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Programmer_GonBuk</h5>
+                        <p class="card-text">개발자 곤북</p>
+                        <a href="#" class="btn btn-info">Go!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <video class="video" autoplay muted controls loop>
+                        <source type="video/mp4" src="bear.mp4" width="300" height="400">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">GonBook_Hobby</h5>
+                        <p class="card-text">곤북이 앨범</p>
+                        <a href="Hobby.html" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="zzzz.jpg" class="card-img-top" width="300" height="400" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">GonBuk_Blog</h5>
+                        <p class="card-text">곤북이 블로그</p>
+                        <a href="#" class="btn btn-info">Go!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <h2>이진곤</h2>
-    <img class="sticky" src="../jpg/profile_main.jpg" width="300" alt="Avatar" border="2">
-    <p>증명사진은 꾸며 달란 적없는데 참 아이돌같은 느낌으로 바꿔주셨다...</p>
-    <h2>링크</h2>
-    <table border="2">
-        <tr>
-            <th><a href="#n01">기본정보</a></th>
-            <th><a href="#n02">정보</a></th>
-            <th><a href="#n03">후원</a></th>
-        </tr>
-    </table>
-    <p><b>나는 이진곤이다.</b></p>
-    <br>
-    <h1 id="n01">기본정보</h1>
-    출생: 1997-06-01 <br>
-    나이: 27세(만 25세) <br>
-    성별: 남 <br>
-    직업: 건물주 차남(백수) <br>
-    성격: 난폭함 <br>
-    주소: 대구광역시 수성구 중동 <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, incidunt dolores, nostrum ex quos sequi praesentium a dolore dolorum excepturi minus reprehenderit modi dicta similique temporibus quaerat eaque quisquam optio animi et corporis! Veniam inventore iusto in ad. Enim nemo, qui nostrum tenetur possimus esse facilis amet sit magnam, quisquam dolore eum voluptatem beatae harum magni quidem. Ipsa iure sit repudiandae quo, atque eligendi laudantium voluptas rerum adipisci dolores odio enim omnis, voluptate modi iste, voluptates aliquid quidem. Dignissimos recusandae voluptatum necessitatibus autem inventore atque id adipisci, quia minima natus delectus laborum impedit fugiat officiis accusamus repellat voluptas libero quod!</p>
-    <table border="1">
-        <tr>
-            <h1 id="n02">정보</h1>
-        </tr>
-        <tr><th>
-            학력</th>
-        <th>Degu Health College(대구보건대학교)
-            <p>대구보건대학교 보건행정학과</p>
-        </th>
-        </tr>
+        <div style="margin:20px"></div>
 
-        <tr><th>
-            활동
-        </th>
-        <th>
-            <p>대구보건대학교 제50대 대의원회 의장, 보건행정학과 학회장</p>
-            <p>2023 대구보건대학교 절주동아리 주절주즐 동아리 회장</p>
-        </th>
-        </tr>
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="suprize.jpg" width="300" height="400" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">GonBuk_Instagram</h5>
+                        <p class="card-text">곤북이 인스타그램</p>
+                        <a href="#" class="btn btn-info">Go!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="my1.jpg" class="card-img-top" width="300" height="400" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">GonBuk_Facebook</h5>
+                        <p class="card-text">곤북이 페이스북</p>
+                        <a href="#" class="btn btn-info">Go!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="sleep.jpg" class="card-img-top" width="300" height="400" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gonbuk_Waiting</h5>
+                        <p class="card-text">곤북이 준비중...</p>
+                        <a href="#" class="btn btn-info">Go!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="locker.jpg" class="card-img-top" width="300" height="400" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gonbuk_Locker</h5>
+                        <p class="card-text">곤북이 사물함</p>
+                        <a href="Locker.html" class="btn btn-info">Go!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <tr>
-            <th>
-                현재
-            </th>
-            <th>
-                백수
-            </th>
-        </tr>
+    </div>
 
-        <tr>
-            <th>
-                미래
-            </th>
-            <th>
-                행복한 진곤
-            </th>
-        </tr>
 
-    </table>
-    
-    <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aperiam possimus sequi in totam. Placeat molestias aliquid architecto esse doloremque illo atque id nemo tempore explicabo? Nostrum perferendis provident veniam fugit corporis fuga, temporibus officiis cum soluta iste aliquid praesentium accusamus fugiat ducimus adipisci iusto modi recusandae distinctio ullam repellat! Fugiat quisquam omnis impedit quaerat quam asperiores, repudiandae nihil natus nesciunt, iusto hic inventore. Temporibus harum voluptatum culpa nobis, adipisci impedit tempore recusandae voluptatibus magnam aspernatur alias, deserunt animi aperiam eaque natus ab deleniti! Delectus cumque recusandae assumenda deserunt fugit velit repellendus doloremque, reprehenderit temporibus odio inventore, dolor ad fugiat fuga voluptates dolore a libero aperiam earum. Totam rem, perferendis maxime non architecto deleniti laborum nesciunt quibusdam explicabo sunt dignissimos odio atque eveniet! Corrupti vitae dolorem amet itaque consequatur architecto incidunt eius aperiam, unde sequi optio accusantium, inventore eos. Neque reiciendis sequi voluptatum, voluptatibus facilis culpa est pariatur veritatis illo fugit consequuntur non dicta eos iusto impedit quidem harum! Esse itaque voluptate qui minima in. Eveniet labore magni dicta ducimus saepe repellat iure nesciunt quae dolore distinctio porro optio et a minima similique, ut laborum reprehenderit dolorem, facilis ab incidunt necessitatibus ullam accusantium voluptatem. Obcaecati, voluptates commodi neque accusamus deleniti exercitationem autem possimus tempora. Eveniet facilis inventore ut esse officiis suscipit accusamus sint temporibus modi ipsam delectus quae a consequuntur itaque corrupti, facere vel sapiente, similique, et tempore? Cumque at officiis suscipit impedit nam, laborum fuga id earum quos! Porro natus quidem maxime, debitis, voluptatum doloremque quo exercitationem cum accusantium molestias corporis doloribus iste deserunt atque iure totam ullam, eius laboriosam esse laudantium aspernatur molestiae soluta adipisci quaerat! Placeat exercitationem omnis, ullam tempore id qui quis est voluptatem reiciendis a voluptate nam esse sunt impedit! Excepturi nemo quam dolore. Omnis, nesciunt cum quos blanditiis autem fugiat. Doloremque distinctio eligendi ducimus necessitatibus temporibus quos est praesentium libero amet, accusamus neque eveniet accusantium delectus. Natus, eligendi earum hic voluptas harum dolor mollitia doloribus laboriosam in repellat similique eos iusto, perspiciatis, laborum quia ducimus placeat qui eaque beatae porro. Corporis labore impedit nesciunt iste repellat, cumque nemo dicta totam repellendus aliquid quos velit laudantium suscipit modi quas quasi atque quia, quam harum rerum! Minus deleniti eligendi laborum vero. Quis quos, vitae eaque quas animi a? Quam ipsam vel nihil quae aut, vero id repellat nemo, laudantium, aliquid veniam placeat nulla quas officia esse assumenda voluptas eius consequuntur. Fugit consequuntur, fugiat perspiciatis possimus aperiam repellat facilis. Culpa eum, delectus dolorem explicabo placeat nihil voluptates praesentium id, optio autem ipsum error quibusdam repudiandae possimus natus veritatis quam expedita. Ut non aliquid aspernatur reiciendis, praesentium aperiam corporis error quia deserunt ipsa nesciunt blanditiis earum ratione eaque facilis nihil necessitatibus, quam nisi porro at temporibus consequuntur illo iure ex. Quaerat sint accusamus fugiat. Tenetur enim totam quaerat repellendus eius in impedit obcaecati atque voluptas temporibus nobis officiis quo dicta id sit ratione est, ex officia assumenda quasi voluptate dolor blanditiis. Facere vero earum commodi, ducimus facilis soluta ipsum repellat deleniti magni dolor id accusantium, rem vitae blanditiis.
-    </p>
-
-    <table border="1">
-
-        <tr>
-                    <h1 id="n03">후원</h1>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="../jpg/Profile_Money.jpg" alt="" width="400">
-            </td>
-            <td>대구은행 <br>
-                225-13-133-871</td>
-        </tr>
-        </tr>
-        <tr>
-            <td colspan="2" align="middle">한푼만 줍쇼</td>
-        </tr>
-    </table>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
